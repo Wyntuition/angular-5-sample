@@ -1,0 +1,10 @@
+version: '2.1'
+
+services:
+  angular-5-sample:
+    image: johnpapa/angular-cli
+    environment:
+      NODE_ENV: development
+    ports:
+      - 4200:4200
+    command: [ng 'serve', '--port', '4200', '--host', '0.0.0.0']
